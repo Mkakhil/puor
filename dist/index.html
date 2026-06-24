@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PUOR | Pure & Original - Coming Soon</title>
+  <meta name="description" content="PUOR is refining its formula to bring you the ultimate organic experience. Subscribe to be notified of our pure & original launch.">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <script type="module" crossorigin src="/assets/index-BKbF-U2M.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-q5x6PGGH.css">
+</head>
+<body>
+
+
+
+  <!-- Theme Toggle Pill -->
+  <div class="theme-toggle-container">
+    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light or dark theme">
+      <span class="theme-icon sun">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </span>
+      <span class="theme-icon moon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </span>
+      <span class="toggle-slider"></span>
+    </button>
+  </div>
+
+  <!-- Main Card Container -->
+  <main class="main-card" id="main-card">
+    <div class="card-inner">
+      
+      <!-- Brand Logo Section -->
+      <div class="logo-container">
+        <!-- Inline logo.svg for styling, animation, and fast rendering -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" class="brand-logo" id="logo-svg">
+          <defs>
+            <!-- Mask to create the droplet cutout inside the letter 'o' -->
+            <mask id="droplet-mask-inline" maskContentUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="500" height="200" fill="white" />
+              <g transform="translate(330, 97) rotate(25)" id="logo-droplet-group">
+                <path d="M 0,-24 C 12,-24 16,-9 16,8 C 16,18 9,25 0,25 C -9,25 -16,18 -16,8 C -16,-9 -12,-24 0,-24 Z" fill="black" />
+              </g>
+            </mask>
+          </defs>
+
+          <!-- Letters Group -->
+          <g fill="currentColor">
+            <!-- Letter 'p' -->
+            <path d="M 41,50 H 65 V 72 C 73,58 89,50 106,50 C 135,50 159,71 159,97 C 159,123 135,144 106,144 C 89,144 73,136 65,122 V 190 H 41 Z M 112,74 C 125,74 135,84 135,97 C 135,110 125,120 112,120 C 99,120 89,110 89,97 C 89,84 99,74 112,74 Z" />
+            <!-- Letter 'u' -->
+            <path d="M 175,50 H 199 V 105 C 199,116 208,122 221,122 C 234,122 243,116 243,105 V 50 H 267 V 144 H 243 V 126 C 236,137 223,144 210,144 C 190,144 175,131 175,108 Z" />
+            <!-- Letter 'o' (masked to show droplet cutout) -->
+            <circle cx="330" cy="97" r="47" mask="url(#droplet-mask-inline)" id="logo-letter-o" />
+            <!-- Letter 'r' -->
+            <path d="M 392,50 H 416 V 72 C 423,58 437,50 452,50 H 458 V 75 H 448 C 431,75 416,88 416,110 V 144 H 392 Z" />
+          </g>
+
+          <!-- Crescent Reflection Line (drawn on top of the cutout in the 'o') -->
+          <g transform="translate(330, 97) rotate(25)" id="logo-crescent-group">
+            <path d="M -7,13 C -3,17 3,17 7,13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+          </g>
+
+          <!-- Tagline 'PURE & ORIGINAL' -->
+          <text x="65" y="172" font-family="'Outfit', 'Inter', sans-serif" font-weight="700" font-size="21" letter-spacing="4" textLength="393" lengthAdjust="spacing" fill="currentColor">PURE & ORIGINAL</text>
+        </svg>
+      </div>
+
+      <!-- Main Copy -->
+      <section class="copy-section">
+        <h1 class="headline">COMING <span class="gradient-text">SOON</span></h1>
+        <p class="subheadline">We are refining our formula to bring you the ultimate organic wellness experience. Sign up now for exclusive launch updates and early access.</p>
+      </section>
+
+
+
+      <!-- Subscribe Form Section -->
+      <section class="form-section">
+        <form id="subscribe-form" class="subscribe-form" novalidate>
+          <div class="input-wrapper">
+            <span class="input-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </span>
+            <input type="email" id="email-input" class="email-input" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" id="submit-btn" class="submit-btn">
+              <span class="btn-text">Join Launch List</span>
+              <span class="btn-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </button>
+          </div>
+          <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="card-footer">
+        <div class="social-container">
+          <a href="#" class="social-link" aria-label="Instagram" id="social-instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter/X" id="social-twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Pinterest" id="social-pinterest">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22a9 9 0 0 1-1.91-8.3C6.46 9.87 9.8 6.07 14 5.3a8.94 8.94 0 0 1 10 9c0 3.23-2.11 6.5-5 6.5a2.53 2.53 0 0 1-2.5-2.23c-1.39 5.56-2.5 7.43-4.5 7.43a2 2 0 0 1-2-1.4c1.39-4.17 2-6.53 2.5-9.3A12.78 12.78 0 0 1 12 11c0-2 .68-4.23 3-4.23c1.78 0 2.5 1.5 2.5 3a10.66 10.66 0 0 1-1 4.2C15.68 15 15 15.5 15.79 16c1.11.75 3.21-.5 3.21-4a7 7 0 0 0-7-7c-4.4 0-7.8 3.5-7.8 8c0 1.5.54 3 1.8 3.5a.51.51 0 0 1 .2.4C6 18 5.76 19.3 5.61 20a.53.53 0 0 1-.5.4c-2.4-.75-3.11-3.5-3.11-6.4a10.87 10.87 0 0 1 6-12"/></svg>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2026 PUOR. All rights reserved. Pure & Original.</p>
+      </footer>
+
+    </div>
+  </main>
+
+</body>
+</html>

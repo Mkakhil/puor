@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="100%" height="100%">
+  <defs>
+    <!-- Mask to create the droplet cutout inside the letter 'o' -->
+    <mask id="droplet-mask" maskContentUnits="userSpaceOnUse">
+      <!-- Everything white remains visible -->
+      <rect x="0" y="0" width="500" height="200" fill="white" />
+      <!-- The black droplet cuts a hole in the circle -->
+      <g transform="translate(330, 97) rotate(25)">
+        <path d="M 0,-24 C 12,-24 16,-9 16,8 C 16,18 9,25 0,25 C -9,25 -16,18 -16,8 C -16,-9 -12,-24 0,-24 Z" fill="black" />
+      </g>
+    </mask>
+  </defs>
+
+  <!-- Letters Group -->
+  <g fill="#000000">
+    <!-- Letter 'p' -->
+    <path d="M 41,50 H 65 V 72 C 73,58 89,50 106,50 C 135,50 159,71 159,97 C 159,123 135,144 106,144 C 89,144 73,136 65,122 V 190 H 41 Z M 112,74 C 125,74 135,84 135,97 C 135,110 125,120 112,120 C 99,120 89,110 89,97 C 89,84 99,74 112,74 Z" />
+    
+    <!-- Letter 'u' -->
+    <path d="M 175,50 H 199 V 105 C 199,116 208,122 221,122 C 234,122 243,116 243,105 V 50 H 267 V 144 H 243 V 126 C 236,137 223,144 210,144 C 190,144 175,131 175,108 Z" />
+    
+    <!-- Letter 'o' (masked to show droplet cutout) -->
+    <circle cx="330" cy="97" r="47" mask="url(#droplet-mask)" />
+    
+    <!-- Letter 'r' -->
+    <path d="M 392,50 H 416 V 72 C 423,58 437,50 452,50 H 458 V 75 H 448 C 431,75 416,88 416,110 V 144 H 392 Z" />
+  </g>
+
+  <!-- Crescent Reflection Line (drawn on top of the cutout in the 'o') -->
+  <g transform="translate(330, 97) rotate(25)">
+    <path d="M -7,13 C -3,17 3,17 7,13" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Tagline 'PURE & ORIGINAL' -->
+  <text x="65" y="172" font-family="'Outfit', 'Inter', -apple-system, sans-serif" font-weight="700" font-size="21" letter-spacing="4" textLength="393" lengthAdjust="spacing" fill="#000000">PURE & ORIGINAL</text>
+</svg>
